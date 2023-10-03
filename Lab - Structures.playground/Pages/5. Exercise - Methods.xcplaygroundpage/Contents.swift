@@ -20,7 +20,7 @@ struct Post {
     var message: String
     var likes: Int
     var numberOfComments: Int
-    func like(){
+    mutating func like(){
         self.likes += 1
     }
 }

@@ -44,16 +44,16 @@ struct Height{
     
     init( heightInInches:Double){
         self.heightInInches = heightInInches
-        self.heightInCentimeters = Inches * 2.54
+        self.heightInCentimeters = heightInInches * 2.54
     }
 }
 
 //:  Now create a variable instance of `Height` called `someonesHeight`. Use the initializer for inches to set the height to 65. Print out the property for height in centimeters and verify that it is equal to 165.1.
-
-
+var H1 = Height(heightInInches: 65)
+print(H1.heightInCentimeters)
 //:  Now create a variable instance of `Height` called `myHeight` and initialize it with your own height. Verify that both `heightInInches` and `heightInCentimeters` are accurate.
-
-
+var myHeight = Height(heightInInches: 73.2)
+print(myHeight.heightInCentimeters)
 /*:
 [Previous](@previous)  |  page 3 of 10  |  [Next: App Exercise - Users and Distance](@next)
  */
